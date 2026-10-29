@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050811">
+  <meta name="description" content="Projects Hub of Sharique Saifi - 20 practical case studies across Microsoft Excel, SQL, Machine Learning, and Power BI dashboards.">
+  <meta property="og:title" content="All 20 Projects | Sharique Saifi - Aspiring Data Analyst">
+  <meta property="og:description" content="Browse 20 practical analytics projects categorized across Excel, SQL, Python/ML, and Power BI.">
+  <meta property="og:type" content="website">
+  <title>Projects Hub (20 Case Studies) | Sharique Saifi</title>
+
+  <!-- 5 CSS Files Linked in Strict Prescribed Order (Section 18) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects-3d.css">
+  <link rel="stylesheet" href="css/background-3d.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Cinematic 3D Movie Background Scene -->
+  <div class="scene" aria-hidden="true">
+    <div class="scene-stars scene-stars--far"></div>
+    <div class="scene-stars scene-stars--mid"></div>
+    <div class="scene-stars scene-stars--near"></div>
+    <div class="scene-grid"></div>
+    <div class="scene-cubes">
+      <div class="cube cube-1"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-2"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-3"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-4"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-5"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+    </div>
+    <div class="scene-beam"></div>
+    <div class="scene-vignette"></div>
+  </div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Sharique Saifi Homepage">
+        <span class="brand-logo-cube" aria-hidden="true">S</span>
+        <div>
+          <span>Sharique Saifi</span>
+          <span class="brand-sub">Aspiring Data Analyst</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Projects Hub</span>
+      </nav>
+
+      <!-- Page Header -->
+      <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2rem;">
+        <span class="section-eyebrow">
+          <span class="badge-icon" aria-hidden="true">📂</span>
+          Practical Portfolio Hub
+        </span>
+        <h1>Technical Project Hub</h1>
+        <p class="section-desc" style="max-width: 860px;">
+          Twenty structured data analytics case studies across 4 core domains. Each project reflects disciplined business questions, reproducible analytical steps, and transparent progress indicators.
+        </p>
+      </div>
+
+      <!-- Illustrative Data Callout (Section 13) -->
+      <div class="illustrative-notice">
+        <span class="notice-icon" aria-hidden="true">⚠️</span>
+        <div>
+          <strong>Portfolio Transparency Standard:</strong> Projects are labeled as <em>In Progress</em> or <em>Planned</em>. Metric previews showcase synthetic demonstration numbers (e.g. ₹12,50,000 revenue) explicitly marked: <em>"Illustrative demo data — not actual business results."</em>
+        </div>
+      </div>
+
+      <!-- Category Filter Navigation Bar (Pure CSS Anchor Links) -->
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-default);">
+        <a href="#excel-section" class="btn btn-sm btn-outline">📗 Excel Projects (5)</a>
+        <a href="#sql-section" class="btn btn-sm btn-outline">🗄️ SQL Projects (5)</a>
+        <a href="#ml-section" class="btn btn-sm btn-outline">🤖 Python &amp; ML (5)</a>
+        <a href="#powerbi-section" class="btn btn-sm btn-outline">📊 Power BI Dashboards (5)</a>
+      </div>
+
+      <!-- ====================================================================
+           CATEGORY A: EXCEL PROJECTS
+           ==================================================================== -->
+      <section id="excel-section" class="category-section" style="scroll-margin-top: calc(var(--header-height) + 1.5rem);">
+        <div class="category-header-wrap">
+          <div class="category-title-group">
+            <h2>
+              <span class="category-icon" aria-hidden="true">📗</span>
+              Category A: Microsoft Excel Projects
+            </h2>
+            <p class="category-desc">
+              Multi-dimensional analysis utilizing advanced formulas (XLOOKUP, INDEX-MATCH, nested IFs), dynamic PivotTables, Power Query data transformation, and KPI dashboards.
+            </p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span class="category-badge-count">5 Projects</span>
+            <a href="excel-projects.html" class="link-case-study">Category Hub →</a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Sales Performance Analysis Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Excel • Project 1</span>
+                  <h3 class="project-title"><a href="projects/excel-sales-performance.html">Sales Performance Analysis Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Analyze revenue, gross profit, product mix, and regional sales distribution across multiple quarters using PivotTables, calculated fields, dynamic charts, and interactive slicers.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">PivotTables</li>
+                <li class="tag">XLOOKUP</li>
+                <li class="tag">Slicers</li>
+                <li class="tag">KPI Cards</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/excel-sales-performance.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Spreadsheet Model</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Chocolate Sales and Profitability Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Excel • Project 2</span>
+                  <h3 class="project-title"><a href="projects/excel-chocolate-sales.html">Chocolate Sales &amp; Profitability Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Clean and normalize cross-border confectionery sales data, evaluating unit profitability, salesperson quotas, country margins, and seasonal demand swings.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Power Query</li>
+                <li class="tag">SUMIFS</li>
+                <li class="tag">Profit Margin</li>
+                <li class="tag">Conditional Format</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/excel-chocolate-sales.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">ETL &amp; Formulas</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Hotel Booking and Cancellation Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Excel • Project 3</span>
+                  <h3 class="project-title"><a href="projects/excel-hotel-booking.html">Hotel Booking &amp; Cancellation Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Investigate reservation lead times, cancellation rates by customer segment, market channel dependency, and ADR (Average Daily Rate) fluctuations.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">COUNTIFS</li>
+                <li class="tag">Nested IF</li>
+                <li class="tag">Cohort Charts</li>
+                <li class="tag">Data Validation</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/excel-hotel-booking.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Hospitality Ops</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: E-commerce Sales and Customer Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Excel • Project 4</span>
+                  <h3 class="project-title"><a href="projects/excel-ecommerce-sales.html">E-commerce Sales &amp; Customer Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Evaluate transaction baskets, category revenue share, repeat purchase ratios, and customer geographic clusters using structured Excel tables.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">INDEX-MATCH</li>
+                <li class="tag">Dynamic Arrays</li>
+                <li class="tag">Pareto 80/20</li>
+                <li class="tag">Summary Cards</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/excel-ecommerce-sales.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Retail Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Inventory Management and Stock Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Excel • Project 5</span>
+                  <h3 class="project-title"><a href="projects/excel-inventory-management.html">Inventory Management &amp; Stock Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Inspired by 2 years in facility administration: monitor stock velocity, flag low-stock thresholds, calculate reorder quantities, and track aging dead-stock.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Safety Stock</li>
+                <li class="tag">Reorder Formulas</li>
+                <li class="tag">Stockout Alerts</li>
+                <li class="tag">Dead-Stock Log</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/excel-inventory-management.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Operations Grounding</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           CATEGORY B: SQL PROJECTS
+           ==================================================================== -->
+      <section id="sql-section" class="category-section" style="scroll-margin-top: calc(var(--header-height) + 1.5rem);">
+        <div class="category-header-wrap">
+          <div class="category-title-group">
+            <h2>
+              <span class="category-icon" aria-hidden="true">🗄️</span>
+              Category B: SQL Relational Projects
+            </h2>
+            <p class="category-desc">
+              Relational query design, database normalization, multi-table joins, subqueries, Common Table Expressions (CTEs), and windowed ranking functions.
+            </p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span class="category-badge-count">5 Projects</span>
+            <a href="sql-projects.html" class="link-case-study">Category Hub →</a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 6: Sales Manager Performance Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">SQL • Project 1</span>
+                  <h3 class="project-title"><a href="projects/sql-sales-manager.html">Sales Manager Performance Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Evaluate regional sales rep quotas, deal velocity, and team contributions utilizing multi-table INNER/LEFT JOINs, aggregate rollups, and windowed rankings.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">JOINs</li>
+                <li class="tag">DENSE_RANK()</li>
+                <li class="tag">GROUP BY</li>
+                <li class="tag">HAVING</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/sql-sales-manager.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Relational Queries</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: E-commerce Order and Revenue Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">SQL • Project 2</span>
+                  <h3 class="project-title"><a href="projects/sql-ecommerce-orders.html">E-commerce Order &amp; Revenue Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Extract transactional insights across customers, line items, payments, and shipments using correlated subqueries, CASE condition branches, and views.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">CASE Statements</li>
+                <li class="tag">Subqueries</li>
+                <li class="tag">SUM/AVG</li>
+                <li class="tag">DB Views</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/sql-ecommerce-orders.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">SQL Schema</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Hotel Booking Data Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">SQL • Project 3</span>
+                  <h3 class="project-title"><a href="projects/sql-hotel-booking.html">Hotel Booking Data Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Audit cancellation rates, lead time distributions, and parking space requests using date manipulation functions (DATEDIFF, DATEADD) and categorical grouping.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Date Functions</li>
+                <li class="tag">CASE Logic</li>
+                <li class="tag">Aggregations</li>
+                <li class="tag">Filtering</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/sql-hotel-booking.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Hospitality DB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: Employee HR Analytics -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">SQL • Project 4</span>
+                  <h3 class="project-title"><a href="projects/sql-employee-hr.html">Employee HR Analytics</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Benchmark departmental salary distributions, tenure trends, and manager-to-staff ratios using window functions (ROW_NUMBER, OVER PARTITION BY) and CTEs.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">OVER (PARTITION)</li>
+                <li class="tag">NTILE(4)</li>
+                <li class="tag">Self-Joins</li>
+                <li class="tag">HR Metrics</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/sql-employee-hr.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">People Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10: Customer Retention and Purchase Analysis -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">SQL • Project 5</span>
+                  <h3 class="project-title"><a href="projects/sql-customer-retention.html">Customer Retention &amp; Purchase Analysis</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Construct customer cohort tables measuring repeat transactions, days between orders, and 90-day churn likelihood utilizing recursive and multi-step CTEs.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">CTEs</li>
+                <li class="tag">LAG / LEAD</li>
+                <li class="tag">Cohort Analysis</li>
+                <li class="tag">Retention %</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/sql-customer-retention.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Cohort Queries</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           CATEGORY C: MACHINE LEARNING PROJECTS
+           ==================================================================== -->
+      <section id="ml-section" class="category-section" style="scroll-margin-top: calc(var(--header-height) + 1.5rem);">
+        <div class="category-header-wrap">
+          <div class="category-title-group">
+            <h2>
+              <span class="category-icon" aria-hidden="true">🤖</span>
+              Category C: Machine Learning &amp; Python Projects
+            </h2>
+            <p class="category-desc">
+              Exploratory Data Analysis with Pandas &amp; Seaborn, scikit-learn predictive modeling (regression, classification, clustering), feature engineering, and evaluation metrics.
+            </p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span class="category-badge-count">5 Projects</span>
+            <a href="python-ml-projects.html" class="link-case-study">Category Hub →</a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 11: House Price Prediction -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Python &amp; ML • Project 1</span>
+                  <h3 class="project-title"><a href="projects/ml-house-price.html">House Price Prediction</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Clean residential housing attributes, perform log transformations on skewed targets, train Multiple Linear Regression &amp; Random Forest regressors, and evaluate RMSE &amp; R².
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Scikit-learn</li>
+                <li class="tag">Regression</li>
+                <li class="tag">Feature Scaling</li>
+                <li class="tag">RMSE / R²</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/ml-house-price.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Regression Pipeline</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 12: Customer Churn Prediction -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Python &amp; ML • Project 2</span>
+                  <h3 class="project-title"><a href="projects/ml-customer-churn.html">Customer Churn Prediction</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Address class imbalance on telecom subscription churn data. Train Logistic Regression and Decision Tree classifiers, evaluating with Precision, Recall, and Confusion Matrix.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Classification</li>
+                <li class="tag">Confusion Matrix</li>
+                <li class="tag">F1-Score</li>
+                <li class="tag">ROC-AUC</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/ml-customer-churn.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Classification</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 13: Sales Forecasting Using Machine Learning -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Python &amp; ML • Project 3</span>
+                  <h3 class="project-title"><a href="projects/ml-sales-forecasting.html">Sales Forecasting Using Machine Learning</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Construct lag features, rolling moving averages, and promotional flags on historical sales data to forecast future weekly demand with MAE benchmarks.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Time Series Lags</li>
+                <li class="tag">Random Forest</li>
+                <li class="tag">Rolling Means</li>
+                <li class="tag">MAE / MAPE</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/ml-sales-forecasting.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Demand Forecasting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 14: Customer Segmentation Using K-Means -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Python &amp; ML • Project 4</span>
+                  <h3 class="project-title"><a href="projects/ml-customer-segmentation.html">Customer Segmentation Using K-Means</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Cluster retail customer purchasing profiles using K-Means. Identify optimal cluster count via Elbow method and Silhouette scores, profiling distinct buyer personas.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">K-Means</li>
+                <li class="tag">StandardScaler</li>
+                <li class="tag">Elbow Curve</li>
+                <li class="tag">Clustering</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/ml-customer-segmentation.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Unsupervised ML</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 15: Student Performance Prediction -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Python &amp; ML • Project 5</span>
+                  <h3 class="project-title"><a href="projects/ml-student-performance.html">Student Performance Prediction</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Explore socio-economic factors, study hours, and previous test scores to train KNN and Decision Tree classifiers identifying students requiring early academic intervention.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">KNN</li>
+                <li class="tag">Decision Trees</li>
+                <li class="tag">Pandas EDA</li>
+                <li class="tag">Classification</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/ml-student-performance.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Education Analytics</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           CATEGORY D: POWER BI PROJECTS
+           ==================================================================== -->
+      <section id="powerbi-section" class="category-section" style="scroll-margin-top: calc(var(--header-height) + 1.5rem);">
+        <div class="category-header-wrap">
+          <div class="category-title-group">
+            <h2>
+              <span class="category-icon" aria-hidden="true">📊</span>
+              Category D: Power BI Interactive Dashboards
+            </h2>
+            <p class="category-desc">
+              End-to-end business intelligence reports incorporating star-schema relationships, DAX time-intelligence measures, dynamic filter contexts, and executive KPI cards.
+            </p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span class="category-badge-count">5 Projects</span>
+            <a href="powerbi-projects.html" class="link-case-study">Category Hub →</a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 16: Sales Performance and Revenue Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Power BI • Project 1</span>
+                  <h3 class="project-title"><a href="projects/powerbi-sales-revenue.html">Sales Performance &amp; Revenue Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Architect star schema joining Sales fact with Customer and Date dimensions. Compute YoY growth, profit margins, and regional KPIs with interactive cross-filtering.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">DAX Measures</li>
+                <li class="tag">Star Schema</li>
+                <li class="tag">KPI Cards</li>
+                <li class="tag">YoY Growth</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/powerbi-sales-revenue.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Executive BI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 17: Hotel Booking Analytics Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Power BI • Project 2</span>
+                  <h3 class="project-title"><a href="projects/powerbi-hotel-booking.html">Hotel Booking Analytics Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--progress">
+                  <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+                </span>
+              </div>
+              <p class="project-desc">
+                Visualize booking lead times, room type cancellation ratios, customer country origins, and month-over-month occupancy trends with interactive slicers.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Drill-Through</li>
+                <li class="tag">Occupancy Rate</li>
+                <li class="tag">Slicers</li>
+                <li class="tag">Custom Visuals</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/powerbi-hotel-booking.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Hospitality BI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 18: Chocolate Sales Business Intelligence Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Power BI • Project 3</span>
+                  <h3 class="project-title"><a href="projects/powerbi-chocolate-bi.html">Chocolate Sales BI Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Evaluate product lines, country profitability, sales rep commission tiers, and cost-of-goods breakdown through multi-page report navigation.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Power Query</li>
+                <li class="tag">Margin DAX</li>
+                <li class="tag">Geo Maps</li>
+                <li class="tag">Decomposition</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/powerbi-chocolate-bi.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Brand Profitability</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 19: E-commerce Sales and Customer Insights Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Power BI • Project 4</span>
+                  <h3 class="project-title"><a href="projects/powerbi-ecommerce-insights.html">E-commerce Insights Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Analyze orders, payment methods, shipping duration SLAs, and customer retention metrics using interactive matrix visuals and conditional formatting.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Matrix Tables</li>
+                <li class="tag">SLA Tracking</li>
+                <li class="tag">AOV Metrics</li>
+                <li class="tag">Tooltips</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/powerbi-ecommerce-insights.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Retail Insights</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 20: Healthcare Analytics Dashboard -->
+          <article class="tilt-card-zones project-card-wrap">
+            <div class="tilt-zone-grid" aria-hidden="true">
+              <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+              <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+              <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+            </div>
+            <div class="tilt-card-body project-card">
+              <div class="project-card-header">
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Power BI • Project 5</span>
+                  <h3 class="project-title"><a href="projects/powerbi-healthcare-analytics.html">Healthcare Analytics Dashboard</a></h3>
+                </div>
+                <span class="status-badge status-badge--planned">
+                  <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+                </span>
+              </div>
+              <p class="project-desc">
+                Explore patient visit frequencies, department wait times, and hospital bed utilization rates using synthetic, non-identifying sample healthcare datasets.
+              </p>
+              <ul class="tag-list" style="margin-bottom: 1rem;">
+                <li class="tag">Wait Time DAX</li>
+                <li class="tag">Department Flow</li>
+                <li class="tag">Resource Load</li>
+                <li class="tag">Non-PHI Data</li>
+              </ul>
+              <div class="project-card-footer">
+                <a href="projects/powerbi-healthcare-analytics.html" class="link-case-study">View Case Study →</a>
+                <span class="repo-pill">Clinical Ops</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Shared Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Sharique Saifi</h3>
+          <p>Aspiring Data Analyst based in Meerut, Uttar Pradesh, India. Transforming raw operational records and datasets into clear business decisions.</p>
+          <div style="margin-top: 1rem;">
+            <span class="footer-badge">
+              <span aria-hidden="true">●</span> 100% HTML5 &amp; CSS3 • 0% JavaScript
+            </span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index.html#skills">Skills Overview</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education &amp; Training</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project Hubs</h4>
+          <ul class="footer-nav">
+            <li><a href="projects.html">All 20 Projects</a></li>
+            <li><a href="excel-projects.html">Excel Projects</a></li>
+            <li><a href="sql-projects.html">SQL Projects</a></li>
+            <li><a href="python-ml-projects.html">Python &amp; ML</a></li>
+            <li><a href="powerbi-projects.html">Power BI Dashboards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-nav">
+            <li><a href="mailto:shariquesaifi74749711@gmail.com">shariquesaifi74749711@gmail.com</a></li>
+            <li><a href="tel:7464975011">+91 7464975011</a></li>
+            <li><span style="color: var(--text-muted); font-size: 0.85rem;">Meerut, UP, India</span></li>
+            <li style="margin-top: 0.5rem;"><a href="resume.pdf" download="Sharique_Saifi_Resume.pdf" style="color: var(--accent);">Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sharique Saifi. All rights reserved. Built with pure HTML &amp; CSS.
+        </div>
+        <div>
+          Illustrative demo values clearly marked. No fake credentials or metrics.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

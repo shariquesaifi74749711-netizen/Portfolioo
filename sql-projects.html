@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050811">
+  <meta name="description" content="SQL Relational Database Projects by Sharique Saifi - 5 comprehensive query case studies covering sales manager performance, e-commerce orders, hotel bookings, HR metrics, and customer retention.">
+  <meta property="og:title" content="SQL Projects Category | Sharique Saifi">
+  <meta property="og:description" content="Explore 5 practical SQL analytics projects featuring multi-table JOINs, subqueries, CTEs, and window functions.">
+  <meta property="og:type" content="website">
+  <title>SQL Projects Category | Sharique Saifi - Aspiring Data Analyst</title>
+
+  <!-- 5 CSS Files Linked in Strict Prescribed Order (Section 18) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects-3d.css">
+  <link rel="stylesheet" href="css/background-3d.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Cinematic 3D Movie Background Scene -->
+  <div class="scene" aria-hidden="true">
+    <div class="scene-stars scene-stars--far"></div>
+    <div class="scene-stars scene-stars--mid"></div>
+    <div class="scene-stars scene-stars--near"></div>
+    <div class="scene-grid"></div>
+    <div class="scene-cubes">
+      <div class="cube cube-1"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-2"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-3"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-4"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+      <div class="cube cube-5"><div class="cube-face cube-front"></div><div class="cube-face cube-back"></div><div class="cube-face cube-right"></div><div class="cube-face cube-left"></div><div class="cube-face cube-top"></div><div class="cube-face cube-bottom"></div></div>
+    </div>
+    <div class="scene-beam"></div>
+    <div class="scene-vignette"></div>
+  </div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Sharique Saifi Homepage">
+        <span class="brand-logo-cube" aria-hidden="true">S</span>
+        <div>
+          <span>Sharique Saifi</span>
+          <span class="brand-sub">Aspiring Data Analyst</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="site-main">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="projects.html">Projects</a>
+        <span class="separator">/</span>
+        <span class="current">SQL Projects</span>
+      </nav>
+
+      <!-- Category Hero Header -->
+      <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2rem;">
+        <span class="section-eyebrow">
+          <span class="badge-icon" aria-hidden="true">🗄️</span>
+          Category B • 5 Projects
+        </span>
+        <h1>SQL Relational Database Projects</h1>
+        <p class="section-desc" style="max-width: 840px;">
+          Complex queries, normalization, table joins, Common Table Expressions (CTEs), and window functions answering high-impact business questions.
+        </p>
+      </div>
+
+      <!-- Illustrative Data Notice -->
+      <div class="illustrative-notice">
+        <span class="notice-icon" aria-hidden="true">⚠️</span>
+        <div>
+          <strong>Illustrative demo data — not actual business results.</strong> SQL query output tables and KPI aggregates are synthetic demonstration values used strictly for technical portfolio showcase.
+        </div>
+      </div>
+
+      <!-- 3D Floating Screen Preview: SQL Console (Section 13) -->
+      <div class="preview-frame screen-3d" style="margin-bottom: 3.5rem;">
+        <div class="preview-chrome-bar">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-title">SQL Query Editor — DBO.Sales_Manager_Quotas.sql</div>
+          <span class="window-badge">Relational View</span>
+        </div>
+        <div class="preview-screen-body">
+          <!-- Code snippet preview -->
+          <div style="background: rgba(4, 8, 18, 0.85); padding: 1rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-default); margin-bottom: 1.25rem; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.8rem; color: #cbd5e1; line-height: 1.5; overflow-x: auto;">
+            <span style="color: #38bdf8;">WITH</span> RegionalTotals <span style="color: #38bdf8;">AS</span> (<br>
+            &nbsp;&nbsp;<span style="color: #38bdf8;">SELECT</span> rep_id, manager_name, region, <span style="color: #f59e0b;">SUM</span>(deal_amount) <span style="color: #38bdf8;">AS</span> total_revenue,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f59e0b;">DENSE_RANK</span>() <span style="color: #38bdf8;">OVER</span>(<span style="color: #38bdf8;">PARTITION BY</span> region <span style="color: #38bdf8;">ORDER BY</span> <span style="color: #f59e0b;">SUM</span>(deal_amount) <span style="color: #38bdf8;">DESC</span>) <span style="color: #38bdf8;">AS</span> regional_rank<br>
+            &nbsp;&nbsp;<span style="color: #38bdf8;">FROM</span> sales_transactions <span style="color: #38bdf8;">INNER JOIN</span> sales_reps <span style="color: #38bdf8;">ON</span> sales_transactions.rep_id = sales_reps.id<br>
+            &nbsp;&nbsp;<span style="color: #38bdf8;">GROUP BY</span> rep_id, manager_name, region<br>
+            )<br>
+            <span style="color: #38bdf8;">SELECT</span> * <span style="color: #38bdf8;">FROM</span> RegionalTotals <span style="color: #38bdf8;">WHERE</span> regional_rank &lt;= 3;
+          </div>
+
+          <!-- Synthetic Results Table (Section 13) -->
+          <div class="table-wrapper" style="margin: 0;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Rep ID</th>
+                  <th>Manager</th>
+                  <th>Region</th>
+                  <th>Illustrative Revenue</th>
+                  <th>Rank</th>
+                  <th>Quota Met</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>REP-104</code></td>
+                  <td>Vikram Mehta</td>
+                  <td>North Zone</td>
+                  <td style="color: var(--accent); font-weight: 700;">₹12,50,000</td>
+                  <td>#1</td>
+                  <td><span class="status-badge status-badge--progress">118%</span></td>
+                </tr>
+                <tr>
+                  <td><code>REP-109</code></td>
+                  <td>Pooja Sharma</td>
+                  <td>West Zone</td>
+                  <td style="color: var(--accent); font-weight: 700;">₹9,80,000</td>
+                  <td>#2</td>
+                  <td><span class="status-badge status-badge--progress">104%</span></td>
+                </tr>
+                <tr>
+                  <td><code>REP-112</code></td>
+                  <td>Arun Kumar</td>
+                  <td>South Zone</td>
+                  <td style="color: var(--accent); font-weight: 700;">₹8,40,000</td>
+                  <td>#3</td>
+                  <td><span class="status-badge status-badge--planned">95%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="preview-caption">Static preview — not an interactive dashboard.</p>
+      </div>
+
+      <!-- 5 SQL Project Cards -->
+      <div class="projects-grid" style="margin-bottom: 4rem;">
+
+        <!-- Project 6: Sales Manager Performance Analysis -->
+        <article class="tilt-card-zones project-card-wrap">
+          <div class="tilt-zone-grid" aria-hidden="true">
+            <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+            <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+            <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+          </div>
+          <div class="tilt-card-body project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-category-tag">SQL • Project 1</span>
+                <h3 class="project-title"><a href="projects/sql-sales-manager.html">Sales Manager Performance Analysis</a></h3>
+              </div>
+              <span class="status-badge status-badge--progress">
+                <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+              </span>
+            </div>
+            <p class="project-desc">
+              Audit regional salesperson performance, quarterly target achievement, and deal turnaround times using multi-table JOINs, GROUP BY rollups, and windowed rankings.
+            </p>
+            <ul class="tag-list" style="margin-bottom: 1rem;">
+              <li class="tag">INNER JOIN</li>
+              <li class="tag">DENSE_RANK()</li>
+              <li class="tag">GROUP BY</li>
+              <li class="tag">HAVING</li>
+            </ul>
+            <div class="project-card-footer">
+              <a href="projects/sql-sales-manager.html" class="link-case-study">Full Case Study →</a>
+              <span class="repo-pill">Case Study Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: E-commerce Order and Revenue Analysis -->
+        <article class="tilt-card-zones project-card-wrap">
+          <div class="tilt-zone-grid" aria-hidden="true">
+            <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+            <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+            <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+          </div>
+          <div class="tilt-card-body project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-category-tag">SQL • Project 2</span>
+                <h3 class="project-title"><a href="projects/sql-ecommerce-orders.html">E-commerce Order &amp; Revenue Analysis</a></h3>
+              </div>
+              <span class="status-badge status-badge--progress">
+                <span class="badge-icon" aria-hidden="true">🔄</span> In Progress
+              </span>
+            </div>
+            <p class="project-desc">
+              Extract granular transactional insights across customers, payment methods, delivery status, and category lines using conditional CASE statements and subqueries.
+            </p>
+            <ul class="tag-list" style="margin-bottom: 1rem;">
+              <li class="tag">CASE Logic</li>
+              <li class="tag">Subqueries</li>
+              <li class="tag">Payment Split</li>
+              <li class="tag">DB Views</li>
+            </ul>
+            <div class="project-card-footer">
+              <a href="projects/sql-ecommerce-orders.html" class="link-case-study">Full Case Study →</a>
+              <span class="repo-pill">Case Study Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: Hotel Booking Data Analysis -->
+        <article class="tilt-card-zones project-card-wrap">
+          <div class="tilt-zone-grid" aria-hidden="true">
+            <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+            <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+            <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+          </div>
+          <div class="tilt-card-body project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-category-tag">SQL • Project 3</span>
+                <h3 class="project-title"><a href="projects/sql-hotel-booking.html">Hotel Booking Data Analysis</a></h3>
+              </div>
+              <span class="status-badge status-badge--planned">
+                <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+              </span>
+            </div>
+            <p class="project-desc">
+              Investigate booking cancellation drivers, customer meal plans, room category upgrades, and seasonal lead times using SQL date functions and conditional flags.
+            </p>
+            <ul class="tag-list" style="margin-bottom: 1rem;">
+              <li class="tag">Date Functions</li>
+              <li class="tag">CASE Statements</li>
+              <li class="tag">Cancellation %</li>
+              <li class="tag">Aggregations</li>
+            </ul>
+            <div class="project-card-footer">
+              <a href="projects/sql-hotel-booking.html" class="link-case-study">Full Case Study →</a>
+              <span class="repo-pill">Case Study Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 9: Employee HR Analytics -->
+        <article class="tilt-card-zones project-card-wrap">
+          <div class="tilt-zone-grid" aria-hidden="true">
+            <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+            <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+            <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+          </div>
+          <div class="tilt-card-body project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-category-tag">SQL • Project 4</span>
+                <h3 class="project-title"><a href="projects/sql-employee-hr.html">Employee HR Analytics</a></h3>
+              </div>
+              <span class="status-badge status-badge--planned">
+                <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+              </span>
+            </div>
+            <p class="project-desc">
+              Benchmark departmental pay parity, attrition rates, and experience tenure quartiles using ranking functions (ROW_NUMBER, NTILE), CTEs, and self-joins.
+            </p>
+            <ul class="tag-list" style="margin-bottom: 1rem;">
+              <li class="tag">ROW_NUMBER()</li>
+              <li class="tag">NTILE(4)</li>
+              <li class="tag">Salary Quartiles</li>
+              <li class="tag">Self-Joins</li>
+            </ul>
+            <div class="project-card-footer">
+              <a href="projects/sql-employee-hr.html" class="link-case-study">Full Case Study →</a>
+              <span class="repo-pill">Case Study Ready</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 10: Customer Retention and Purchase Analysis -->
+        <article class="tilt-card-zones project-card-wrap">
+          <div class="tilt-zone-grid" aria-hidden="true">
+            <span class="tilt-zone zone-tl"></span><span class="tilt-zone zone-tc"></span><span class="tilt-zone zone-tr"></span>
+            <span class="tilt-zone zone-ml"></span><span class="tilt-zone zone-mc"></span><span class="tilt-zone zone-mr"></span>
+            <span class="tilt-zone zone-bl"></span><span class="tilt-zone zone-bc"></span><span class="tilt-zone zone-br"></span>
+          </div>
+          <div class="tilt-card-body project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-category-tag">SQL • Project 5</span>
+                <h3 class="project-title"><a href="projects/sql-customer-retention.html">Customer Retention &amp; Purchase Analysis</a></h3>
+              </div>
+              <span class="status-badge status-badge--planned">
+                <span class="badge-icon" aria-hidden="true">⏳</span> Planned
+              </span>
+            </div>
+            <p class="project-desc">
+              Measure customer repurchase cycles, churn likelihood, and cumulative lifetime value using CTEs, date boundaries, and LAG/LEAD analytical window functions.
+            </p>
+            <ul class="tag-list" style="margin-bottom: 1rem;">
+              <li class="tag">CTEs</li>
+              <li class="tag">LAG / LEAD</li>
+              <li class="tag">Retention Cohort</li>
+              <li class="tag">Repeat Rate</li>
+            </ul>
+            <div class="project-card-footer">
+              <a href="projects/sql-customer-retention.html" class="link-case-study">Full Case Study →</a>
+              <span class="repo-pill">Case Study Ready</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Navigation Between Categories -->
+      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-default); padding-top: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <a href="excel-projects.html" class="btn btn-secondary">← Previous Category: Excel Projects</a>
+        <a href="python-ml-projects.html" class="btn btn-primary">Next Category: Python &amp; ML →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Sharique Saifi</h3>
+          <p>Aspiring Data Analyst based in Meerut, Uttar Pradesh, India. Transforming raw operational records and datasets into clear business decisions.</p>
+          <div style="margin-top: 1rem;">
+            <span class="footer-badge">
+              <span aria-hidden="true">●</span> 100% HTML5 &amp; CSS3 • 0% JavaScript
+            </span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index.html#skills">Skills Overview</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education &amp; Training</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project Hubs</h4>
+          <ul class="footer-nav">
+            <li><a href="projects.html">All 20 Projects</a></li>
+            <li><a href="excel-projects.html">Excel Projects</a></li>
+            <li><a href="sql-projects.html">SQL Projects</a></li>
+            <li><a href="python-ml-projects.html">Python &amp; ML</a></li>
+            <li><a href="powerbi-projects.html">Power BI Dashboards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-nav">
+            <li><a href="mailto:shariquesaifi74749711@gmail.com">shariquesaifi74749711@gmail.com</a></li>
+            <li><a href="tel:7464975011">+91 7464975011</a></li>
+            <li><span style="color: var(--text-muted); font-size: 0.85rem;">Meerut, UP, India</span></li>
+            <li style="margin-top: 0.5rem;"><a href="resume.pdf" download="Sharique_Saifi_Resume.pdf" style="color: var(--accent);">Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sharique Saifi. All rights reserved. Built with pure HTML &amp; CSS.
+        </div>
+        <div>
+          Illustrative demo values clearly marked. No fake credentials or metrics.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
